@@ -7,6 +7,7 @@ ament_target_dependencies(${PROJECT_NAME}
   "OpenCV"
   "sensor_msgs"
 )
+link_directories(${Boost_LIBRARY_DIRS})
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES})
 
 install(TARGETS ${PROJECT_NAME}
